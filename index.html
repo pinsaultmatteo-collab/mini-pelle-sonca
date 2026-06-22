@@ -303,11 +303,26 @@ footer{background:var(--graphite);color:#C3CCD5;padding:66px 0 40px;position:rel
   .nav-links{display:none}
   .nav-links.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:18px;padding:24px 20px 28px;background:#fff;border-bottom:1px solid var(--line)}
   .burger{display:block}
+  .brand img{height:30px}
   section.block{padding:72px 0}
-  .hero-inner{padding:104px 0 110px}
+  .hero-inner{padding:104px 14px 112px}
   .hero h1 .ln{white-space:normal}
   .why-grid{grid-template-columns:1fr}
-  .foot-grid{grid-template-columns:1fr}
+  /* bandeau : 4 stats en une colonne centrée */
+  .strip{grid-template-columns:1fr;row-gap:26px}
+  .stat + .stat::before{display:none}
+  /* distribution : bouton itinéraire centré et jaune */
+  .dist-map .addr{justify-content:center;text-align:center}
+  .dist-map .btn{align-self:center;--bg:var(--amber);--fg:#1a1206;border-color:transparent;box-shadow:0 14px 30px -14px rgba(255,179,0,.75)}
+  .dist-map .btn:hover{border-color:transparent;background:var(--amber)}
+  /* footer : tout centré, rappel de navigation sur 2 colonnes */
+  .foot-grid{grid-template-columns:1fr 1fr;gap:30px 18px;text-align:center}
+  .foot-brand{grid-column:1/-1}
+  .foot-brand img{height:38px}
+  .foot-brand p{margin-inline:auto}
+  .fcol a:hover{padding-left:0}
+  .foot-note{flex-direction:column;align-items:center;text-align:center;justify-content:center}
+  .pmc-credit{flex-direction:column;gap:12px}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
