@@ -242,7 +242,9 @@ section.alt{background:var(--paper-2)}
 
 /* Livraison — bande France entière */
 section.ship{background:var(--paper-2);position:relative;overflow:hidden;padding:86px 0}
-.ship-in{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.ship-in{position:relative;display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+.ship-in .ship-visual{order:1}
+.ship-in .ship-copy{order:2}
 .ship-copy h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-top:16px}
 .ship-copy p{color:var(--ink-soft);margin:18px 0 0;max-width:50ch}
 .ship-copy .note{font-family:var(--f-mono);font-size:.78rem;color:var(--mut);margin-top:20px;display:inline-flex;align-items:center;gap:10px;
@@ -308,6 +310,8 @@ footer{background:var(--graphite);color:#C3CCD5;padding:66px 0 40px;position:rel
   .quality{grid-template-columns:1fr;gap:34px}
   .dist-top,.dist-media{grid-template-columns:1fr;gap:28px}
   .ship-in{grid-template-columns:1fr;gap:30px}
+  .ship-in .ship-copy{order:0}
+  .ship-in .ship-visual{order:1}
   .strip{grid-template-columns:repeat(2,1fr);row-gap:34px}
   .stat:nth-child(3)::before{display:none}
   .foot-grid{grid-template-columns:1fr 1fr}
