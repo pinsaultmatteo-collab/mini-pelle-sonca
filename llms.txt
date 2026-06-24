@@ -1,0 +1,18 @@
+# SONCA
+
+> SONCA est une marque d'engins de chantier compacts — mini-pelles, mini-chargeurs et mini-dumpers — conçus pour offrir le meilleur rapport prix-performance. La marque est distribuée en France par CZN Machinery (Toulouse), importateur officiel, qui assure la vente, la configuration, le financement, la livraison et le SAV.
+
+Ce site (mini-pelle-sonca.com) est le site de marque : il présente la gamme, les valeurs et la qualité SONCA. Pour acheter, configurer une machine, consulter les prix ou les accessoires, tout se passe sur le site du distributeur officiel **CZN Machinery**.
+
+## La marque
+- [Accueil SONCA](https://mini-pelle-sonca.com/): présentation de la marque, gamme mini-pelles / mini-chargeurs / mini-dumpers, qualité, distribution et livraison en France.
+
+## Acheter / configurer (distributeur officiel CZN Machinery)
+- [Mini-pelles SONCA chez CZN](https://czn-machinery.com/mini-pelles/)
+- [Mini-chargeurs SONCA chez CZN](https://czn-machinery.com/mini-chargeurs/)
+- [Mini-tombereaux SONCA chez CZN](https://czn-machinery.com/mini-tombereaux/)
+- [Accessoires compatibles chez CZN](https://czn-machinery.com/accessoires/)
+- [Contact / devis CZN](https://czn-machinery.com/contact/)
+
+## Optional
+- [Contenu complet (llms-full.md)](https://mini-pelle-sonca.com/llms-full.md)
