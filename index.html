@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
+
+<!-- Google tag (gtag.js) — GA4 SONCA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZQ98FJ9J4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZQ98FJ9J4');
+</script>
 <title>SONCA — Mini-pelles, mini-chargeuses &amp; mini-dumpers | Marque d'engins compacts</title>
 <meta name="description" content="SONCA conçoit des mini-engins de chantier robustes et au meilleur rapport prix-performance : mini-pelles, mini-chargeurs, mini-dumpers. Marque distribuée en France par CZN Machinery — découvrez la gamme, essais, garantie et livraison.">
 <meta name="robots" content="index, follow">
@@ -669,6 +678,22 @@ footer{background:var(--graphite);color:#C3CCD5;padding:66px 0 40px;position:rel
       card.addEventListener('pointerleave', function(){ card.style.transform=''; });
     });
   }
+
+  /* GA4 — event "click_czn" à chaque clic vers czn-machinery.com */
+  function cznLoc(el){
+    if(el.closest('footer')) return 'footer';
+    if(el.closest('header.nav')) return 'nav';
+    var s=el.closest('section[id]'); return s?s.id:'autre';
+  }
+  document.addEventListener('click', function(ev){
+    var a=ev.target.closest ? ev.target.closest('a[href*="czn-machinery.com"]') : null;
+    if(!a || typeof gtag!=='function') return;
+    gtag('event','click_czn',{
+      link_url:a.href,
+      link_text:(a.textContent||'').replace(/\s+/g,' ').trim().slice(0,100),
+      cta_location:cznLoc(a)
+    });
+  }, true);
 })();
 </script>
 </body>
